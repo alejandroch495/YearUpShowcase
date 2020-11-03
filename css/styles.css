@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding: 15px;
+    grid-column: 1 / 4;
+    background: hotpink;
+}
+
+lsb {
+    padding: 15px;
+    grid-column: 1/2;
+    background: hotpink;
+}
+
+maincontent {
+    padding: 15px;
+    grid-column: 2/3;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+rsb {
+    padding: 15px;
+    grid-column: 3/4;
+    background: hotpink;
+}
+
+footer {
+    padding: 15px;
+    grid-column: 1 / 4;
+    background: hotpink;
+}
