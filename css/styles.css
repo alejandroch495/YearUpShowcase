@@ -1,3 +1,15 @@
+/*
+ 
+ ██████╗  █████╗ ███████╗██╗ ██████╗    ██╗  ██╗████████╗███╗   ███╗██╗         ███████╗████████╗██╗   ██╗██╗     ██╗███╗   ██╗ ██████╗ 
+ ██╔══██╗██╔══██╗██╔════╝██║██╔════╝    ██║  ██║╚══██╔══╝████╗ ████║██║         ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██║████╗  ██║██╔════╝ 
+ ██████╔╝███████║███████╗██║██║         ███████║   ██║   ██╔████╔██║██║         ███████╗   ██║    ╚████╔╝ ██║     ██║██╔██╗ ██║██║  ███╗
+ ██╔══██╗██╔══██║╚════██║██║██║         ██╔══██║   ██║   ██║╚██╔╝██║██║         ╚════██║   ██║     ╚██╔╝  ██║     ██║██║╚██╗██║██║   ██║
+ ██████╔╝██║  ██║███████║██║╚██████╗    ██║  ██║   ██║   ██║ ╚═╝ ██║███████╗    ███████║   ██║      ██║   ███████╗██║██║ ╚████║╚██████╔╝
+ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝    ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝╚══════╝    ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                                                                                                                        
+ 
+*/
+
 body {
     margin: 0;
     padding: 0;
@@ -10,32 +22,258 @@ body {
 header {
     padding: 15px;
     grid-column: 1 / 4;
-    background: hotpink;
+    background: rgb(41, 41, 41);
 }
 
 lsb {
     padding: 15px;
     grid-column: 1/2;
-    background: hotpink;
+    background: rgb(41, 41, 41);
 }
 
 maincontent {
     padding: 15px;
     grid-column: 2/3;
-    background: blue;
+    background: rgb(41, 41, 41);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    overflow: hidden scroll;
 }
 
 rsb {
     padding: 15px;
     grid-column: 3/4;
-    background: hotpink;
+    background: rgb(41, 41, 41);
 }
 
 footer {
     padding: 15px;
     grid-column: 1 / 4;
-    background: hotpink;
+    background: rgb(41, 41, 41);
+}
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗     ███████╗ ████████╗ ██╗   ██╗ ██╗      ██╗ ███╗   ██╗  ██████╗ 
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ██╔════╝ ╚══██╔══╝ ╚██╗ ██╔╝ ██║      ██║ ████╗  ██║ ██╔════╝ 
+ ██║      ███████║ ██████╔╝ ██║  ██║    ███████╗    ██║     ╚████╔╝  ██║      ██║ ██╔██╗ ██║ ██║  ███╗
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ╚════██║    ██║      ╚██╔╝   ██║      ██║ ██║╚██╗██║ ██║   ██║
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ███████║    ██║       ██║    ███████╗ ██║ ██║ ╚████║ ╚██████╔╝
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚══════╝    ╚═╝       ╚═╝    ╚══════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝ 
+                                                                                             
+ 
+*/
+
+.card {
+    display: grid;
+    position: relative;
+    margin: 3vw;
+    width: 30vw;
+    height: 30vw;
+    color: lavenderblush;
+    /*  background: #515151; */
+    border: rgb(61, 61, 61) double max(.55vw);
+    border-radius: 3vw 3vw 3vw 3vw;
+    overflow: hidden;
+    box-shadow: 5px 1px 20px black, -5px -1px 20px rgb(48, 48, 48), -1px -5px 20px rgb(24, 22, 22);
+}
+
+.card-body {
+    display: grid;
+    text-align: center;
+    background: lightcoral;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0%;
+    align-self: center;
+    width: 75%;
+    left: 12.5%;
+}
+
+.card-img-top {
+    width: inherit;
+    /* width: 35vw; */
+    height: initial;
+    border-radius: 5%;
+}
+
+#linkn {
+    background-color: rgba(58, 58, 58, 0.753);
+    color: #1190ca;
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    align-self: center;
+    padding: 3px;
+    margin: 0;
+    left: 0px;
+    position: relative;
+}
+
+div.card:hover .card-img-top {
+    animation: photofade 1s linear forwards;
+}
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗      █████╗  ███╗   ██╗ ██╗ ███╗   ███╗  █████╗  ████████╗ ██╗  ██████╗  ███╗   ██╗
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ██╔══██╗ ████╗  ██║ ██║ ████╗ ████║ ██╔══██╗ ╚══██╔══╝ ██║ ██╔═══██╗ ████╗  ██║
+ ██║      ███████║ ██████╔╝ ██║  ██║    ███████║ ██╔██╗ ██║ ██║ ██╔████╔██║ ███████║    ██║    ██║ ██║   ██║ ██╔██╗ ██║
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ██╔══██║ ██║╚██╗██║ ██║ ██║╚██╔╝██║ ██╔══██║    ██║    ██║ ██║   ██║ ██║╚██╗██║
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ██║  ██║ ██║ ╚████║ ██║ ██║ ╚═╝ ██║ ██║  ██║    ██║    ██║ ╚██████╔╝ ██║ ╚████║
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝  ╚═════╝  ╚═╝  ╚═══╝
+                                                                                                            
+ 
+*/
+
+@keyframes photofade {
+    0% {
+        filter: blur(0px);
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: blur(3px);
+        filter: grayscale(80%);
+    }
+}
+
+@keyframes cardAnim {
+    0% {
+        opacity: 0%;
+        bottom: 010%;
+    }
+    80% {
+        opacity: 00%;
+        bottom: 10%;
+    }
+    95% {
+        opacity: 30%;
+        bottom: 10%;
+    }
+    100% {
+        opacity: 100%;
+        bottom: 535%;
+    }
+}
+
+@keyframes cardAnimB {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+div:hover>div.card-body {
+    /* bottom: -300px; */
+    animation: cardAnim 1s ease-in forwards;
+}
+
+
+/* div:hover::after>div.card-body {
+    bottom: 300px;
+    animation: cardAnimB 1s ease-in forwards;
+} */
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗     ███╗   ███╗ ███████╗ ██████╗  ██╗  █████╗      ██████╗  ██╗   ██╗ ███████╗ ██████╗  ██╗ ███████╗ ███████╗    
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ████╗ ████║ ██╔════╝ ██╔══██╗ ██║ ██╔══██╗    ██╔═══██╗ ██║   ██║ ██╔════╝ ██╔══██╗ ██║ ██╔════╝ ██╔════╝    
+ ██║      ███████║ ██████╔╝ ██║  ██║    ██╔████╔██║ █████╗   ██║  ██║ ██║ ███████║    ██║   ██║ ██║   ██║ █████╗   ██████╔╝ ██║ █████╗   ███████╗    
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ██║╚██╔╝██║ ██╔══╝   ██║  ██║ ██║ ██╔══██║    ██║▄▄ ██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║ ██╔══╝   ╚════██║    
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ██║ ╚═╝ ██║ ███████╗ ██████╔╝ ██║ ██║  ██║    ╚██████╔╝ ╚██████╔╝ ███████╗ ██║  ██║ ██║ ███████╗ ███████║    
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝ ╚══════╝ ╚═════╝  ╚═╝ ╚═╝  ╚═╝     ╚══▀▀═╝   ╚═════╝  ╚══════╝ ╚═╝  ╚═╝ ╚═╝ ╚══════╝ ╚══════╝    
+                                                                                                                                        
+ 
+*/
+
+@media (max-width: 1600px) {
+    @keyframes cardAnim {
+        0% {
+            opacity: 0%;
+            bottom: 010%;
+            width: 0%;
+            align-self: center;
+        }
+        80% {
+            opacity: 00%;
+            bottom: 30%;
+        }
+        90% {
+            opacity: 30%;
+            bottom: 35%;
+            width: 10%;
+        }
+        100% {
+            opacity: 100%;
+            bottom: 110%;
+            width: 75%;
+            border: #1190ca solid 2px;
+            border-radius: 5px;
+        }
+    }
+    div:hover>div.card-body {
+        background: rgba(71, 71, 71, 0.705);
+        align-self: center;
+        bottom: -350px;
+        animation: cardAnim 1s ease-in forwards;
+        height: 25ch;
+        overflow: hidden scroll;
+    }
+}
+
+@media (min-width: 1600px) {
+    .card-body {
+        background: rgba(27, 27, 27, 0.658);
+        position: relative;
+        margin: 0px;
+        padding: 5px;
+        opacity: 0%;
+        border-radius: 5px;
+        margin: 0 5% 0 5%;
+        align-self: center;
+    }
+    .cardd {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        border-radius: 5px;
+    }
+    @keyframes cardAnim {
+        0% {
+            opacity: 0%;
+            bottom: 0;
+        }
+        80% {
+            opacity: 00%;
+            bottom: 40ch;
+        }
+        95% {
+            opacity: 30%;
+            bottom: 44ch;
+        }
+        100% {
+            opacity: 100%;
+            bottom: 46ch;
+            width: 75%;
+            left: 6%;
+            border: #1190ca solid 2px;
+            border-radius: 5px;
+        }
+    }
+    div:hover>div.card-body {
+        bottom: -300px;
+        animation: cardAnim 500ms alternate forwards;
+        overflow: hidden scroll;
+        align-self: center;
+        height: 30ch;
+    }
 }
