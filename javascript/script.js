@@ -16,6 +16,7 @@ function card1Detail() {
         " He experienced managing an ecommerce business that he created called Meerakol. As well as operated his" +
         " own social media marketing agency called Revenue Multiply.</p>" +
         "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/jimuelfaylona\"> Mark Jimuel R Faylona</a>";
+
 }
 
 function card2Detail() {
