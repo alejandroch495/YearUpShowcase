@@ -1,0 +1,428 @@
+/*
+ 
+ ██████╗  █████╗ ███████╗██╗ ██████╗    ██╗  ██╗████████╗███╗   ███╗██╗         ███████╗████████╗██╗   ██╗██╗     ██╗███╗   ██╗ ██████╗ 
+ ██╔══██╗██╔══██╗██╔════╝██║██╔════╝    ██║  ██║╚══██╔══╝████╗ ████║██║         ██╔════╝╚══██╔══╝╚██╗ ██╔╝██║     ██║████╗  ██║██╔════╝ 
+ ██████╔╝███████║███████╗██║██║         ███████║   ██║   ██╔████╔██║██║         ███████╗   ██║    ╚████╔╝ ██║     ██║██╔██╗ ██║██║  ███╗
+ ██╔══██╗██╔══██║╚════██║██║██║         ██╔══██║   ██║   ██║╚██╔╝██║██║         ╚════██║   ██║     ╚██╔╝  ██║     ██║██║╚██╗██║██║   ██║
+ ██████╔╝██║  ██║███████║██║╚██████╗    ██║  ██║   ██║   ██║ ╚═╝ ██║███████╗    ███████║   ██║      ██║   ███████╗██║██║ ╚████║╚██████╔╝
+ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝    ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝╚══════╝    ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                                                                                                                                        
+ 
+*/
+
+section {
+    width: 59vmax;
+}
+
+.bottomi {
+    width: 100%;
+    background: gray;
+    border-radius: 1rem;
+}
+
+
+/* this mainc is what keeps everything within the window and visible */
+
+.mainc {
+    position: relative;
+    bottom: 10%;
+    top: 1%;
+    overflow: hidden scroll;
+    width: 100%;
+}
+
+
+/* this stylizes the content inside of the maincontent section */
+
+.mainc>div {
+    background: rgba(64, 115, 224, 0.527);
+    width: 50em;
+    border: solid black;
+    text-shadow: 1px 1px 2px rgba(146, 125, 2, 0.521);
+    color: #3060bb;
+    border-radius: 10px;
+    margin-bottom: 2ch;
+}
+
+
+/* this aligns everything to the center */
+
+.mainc * {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.mainc a {
+    display: inline-block;
+    padding: 0;
+    margin: 2rem;
+    width: auto;
+}
+
+.mainc p {
+    width: 50%;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+lsb {
+    padding: 15px;
+    grid-column: 1/2;
+    background: rgb(41, 41, 41);
+}
+
+maincontent {
+    padding: 15px;
+    grid-column: 2/3;
+    background: rgb(41, 41, 41);
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden scroll;
+}
+
+rsb {
+    padding: 15px;
+    grid-column: 3/4;
+    background: rgb(41, 41, 41);
+}
+
+footer {
+    padding: 15px;
+    grid-column: 1 / 4;
+    background: rgb(41, 41, 41);
+}
+
+
+/*
+ 
+ ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗    ██████╗  █████╗ ██████╗     ███████╗██╗   ██╗██╗     ██╗███████╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+ ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗██╔══██╗    ██╔════╝╚██╗ ██╔╝██║     ██║╚══███╔╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+ ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║██║   ██║██╔██╗ ██║    ██████╔╝███████║██████╔╝    ███████╗ ╚████╔╝ ██║     ██║  ███╔╝ ███████║   ██║   ██║██║   ██║██╔██╗ ██║
+ ██║╚██╗██║██╔══██║╚██╗ ██╔╝██║██║   ██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║    ██╔══██╗██╔══██║██╔══██╗    ╚════██║  ╚██╔╝  ██║     ██║ ███╔╝  ██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+ ██║ ╚████║██║  ██║ ╚████╔╝ ██║╚██████╔╝██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║    ██████╔╝██║  ██║██║  ██║    ███████║   ██║   ███████╗██║███████╗██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+ ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝   ╚═╝   ╚══════╝╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+                                                                                                                                                                                          
+ 
+*/
+
+
+/* this is the amount of space for the header title */
+
+.navHeader {
+    width: 45%;
+}
+
+
+/* this sets the size for the nav bar */
+
+nav {
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* this spaces the header title and nave bar evenly */
+
+body>header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: auto auto 15% 10px;
+}
+
+
+/* some basic Unordered list blocking  */
+
+ul {
+    position: relative;
+    bottom: 10%;
+    display: block;
+    list-style-type: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+}
+
+li {
+    margin: 0px 5px;
+    display: grid;
+    float: right;
+    height: 100%;
+    align-content: center;
+}
+
+li a {
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px 32px 0px 32px;
+    text-decoration: none;
+    height: 100%;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+    border-style: solid;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0px 0px 0px 15px;
+    grid-column: 1 / 4;
+    background: rgb(27, 27, 27);
+}
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗     ███████╗ ████████╗ ██╗   ██╗ ██╗      ██╗ ███╗   ██╗  ██████╗ 
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ██╔════╝ ╚══██╔══╝ ╚██╗ ██╔╝ ██║      ██║ ████╗  ██║ ██╔════╝ 
+ ██║      ███████║ ██████╔╝ ██║  ██║    ███████╗    ██║     ╚████╔╝  ██║      ██║ ██╔██╗ ██║ ██║  ███╗
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ╚════██║    ██║      ╚██╔╝   ██║      ██║ ██║╚██╗██║ ██║   ██║
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ███████║    ██║       ██║    ███████╗ ██║ ██║ ╚████║ ╚██████╔╝
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚══════╝    ╚═╝       ╚═╝    ╚══════╝ ╚═╝ ╚═╝  ╚═══╝  ╚═════╝ 
+                                                                                             
+ 
+*/
+
+.card {
+    display: grid;
+    position: relative;
+    margin: 3vw;
+    width: 30vw;
+    height: 30vw;
+    color: lavenderblush;
+    /*  background: #515151; */
+    border: rgb(61, 61, 61) double max(.55vw);
+    border-radius: 3vw 3vw 3vw 3vw;
+    overflow: hidden;
+    box-shadow: 5px 1px 20px black, -5px -1px 20px rgb(48, 48, 48), -1px -5px 20px rgb(24, 22, 22);
+}
+
+.card-body {
+    display: grid;
+    text-align: center;
+    background: lightcoral;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0%;
+    align-self: center;
+    width: 75%;
+    left: 12.5%;
+}
+
+.card-img-top {
+    width: inherit;
+    /* width: 35vw; */
+    height: initial;
+    border-radius: 5%;
+}
+
+#linkn {
+    background-color: rgba(58, 58, 58, 0.753);
+    color: #1190ca;
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    align-self: center;
+    padding: 3px;
+    margin: 0;
+    left: 0px;
+    position: relative;
+    margin: 5px;
+}
+
+div.card:hover .card-img-top {
+    animation: photofade 1s linear forwards;
+}
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗      █████╗  ███╗   ██╗ ██╗ ███╗   ███╗  █████╗  ████████╗ ██╗  ██████╗  ███╗   ██╗
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ██╔══██╗ ████╗  ██║ ██║ ████╗ ████║ ██╔══██╗ ╚══██╔══╝ ██║ ██╔═══██╗ ████╗  ██║
+ ██║      ███████║ ██████╔╝ ██║  ██║    ███████║ ██╔██╗ ██║ ██║ ██╔████╔██║ ███████║    ██║    ██║ ██║   ██║ ██╔██╗ ██║
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ██╔══██║ ██║╚██╗██║ ██║ ██║╚██╔╝██║ ██╔══██║    ██║    ██║ ██║   ██║ ██║╚██╗██║
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ██║  ██║ ██║ ╚████║ ██║ ██║ ╚═╝ ██║ ██║  ██║    ██║    ██║ ╚██████╔╝ ██║ ╚████║
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝    ╚═╝    ╚═╝  ╚═════╝  ╚═╝  ╚═══╝
+                                                                                                            
+ 
+*/
+
+@keyframes photofade {
+    0% {
+        filter: blur(0px);
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: blur(3px);
+        filter: grayscale(80%);
+    }
+}
+
+
+/*             @keyframes cardAnim {
+                0% {
+                    opacity: 0%;
+                    bottom: 010%;
+                }
+                80% {
+                    opacity: 00%;
+                    bottom: 10%;
+                }
+                95% {
+                    opacity: 30%;
+                    bottom: 10%;
+                }
+                100% {
+                    opacity: 100%;
+                    bottom: 535%;
+                }
+            } */
+
+@keyframes cardAnimB {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+div:hover>div.card-body {
+    /* bottom: -300px; */
+    animation: cardAnim 1s ease-in forwards;
+}
+
+
+/* div:hover::after>div.card-body {
+    bottom: 300px;
+    animation: cardAnimB 1s ease-in forwards;
+} */
+
+
+/*
+ 
+  ██████╗  █████╗  ██████╗  ██████╗     ███╗   ███╗ ███████╗ ██████╗  ██╗  █████╗      ██████╗  ██╗   ██╗ ███████╗ ██████╗  ██╗ ███████╗ ███████╗    
+ ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ████╗ ████║ ██╔════╝ ██╔══██╗ ██║ ██╔══██╗    ██╔═══██╗ ██║   ██║ ██╔════╝ ██╔══██╗ ██║ ██╔════╝ ██╔════╝    
+ ██║      ███████║ ██████╔╝ ██║  ██║    ██╔████╔██║ █████╗   ██║  ██║ ██║ ███████║    ██║   ██║ ██║   ██║ █████╗   ██████╔╝ ██║ █████╗   ███████╗    
+ ██║      ██╔══██║ ██╔══██╗ ██║  ██║    ██║╚██╔╝██║ ██╔══╝   ██║  ██║ ██║ ██╔══██║    ██║▄▄ ██║ ██║   ██║ ██╔══╝   ██╔══██╗ ██║ ██╔══╝   ╚════██║    
+ ╚██████╗ ██║  ██║ ██║  ██║ ██████╔╝    ██║ ╚═╝ ██║ ███████╗ ██████╔╝ ██║ ██║  ██║    ╚██████╔╝ ╚██████╔╝ ███████╗ ██║  ██║ ██║ ███████╗ ███████║    
+  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝ ╚══════╝ ╚═════╝  ╚═╝ ╚═╝  ╚═╝     ╚══▀▀═╝   ╚═════╝  ╚══════╝ ╚═╝  ╚═╝ ╚═╝ ╚══════╝ ╚══════╝    
+                                                                                                                                        
+ 
+*/
+
+@media (max-width: 1600px) {
+    @keyframes cardAnim {
+        0% {
+            opacity: 0%;
+            bottom: 010%;
+            width: 0%;
+            align-self: center;
+        }
+        80% {
+            opacity: 00%;
+            bottom: 30%;
+        }
+        90% {
+            opacity: 30%;
+            bottom: 35%;
+            width: 10%;
+        }
+        100% {
+            opacity: 100%;
+            bottom: 105%;
+            font-size: 1em;
+            width: 75%;
+            border: #1190ca solid 2px;
+            border-radius: 5px;
+        }
+    }
+    div:hover>div.card-body {
+        background: rgba(71, 71, 71, 0.705);
+        align-self: center;
+        bottom: -350px;
+        animation: cardAnim 1s ease-in forwards;
+        height: 25ch;
+        overflow: hidden scroll;
+    }
+}
+
+@media (min-width: 1600px) {
+    .card-body {
+        display: flex;
+        background: rgba(27, 27, 27, 0.658);
+        position: relative;
+        flex-direction: column;
+        margin: 0px;
+        padding: 50px 1rem 22rem 1rem;
+        opacity: 0%;
+        border-radius: 5px;
+        margin: 0 5% 0 5%;
+        align-self: center;
+        justify-content: space-around;
+    }
+    .cardd {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        border-radius: 5px;
+    }
+    @keyframes cardAnim {
+        0% {
+            opacity: 0%;
+            bottom: 0;
+        }
+        80% {
+            opacity: 00%;
+            bottom: 40ch;
+        }
+        95% {
+            opacity: 30%;
+            bottom: 44ch;
+        }
+        100% {
+            opacity: 100%;
+            bottom: 46ch;
+            width: 75%;
+            left: 6%;
+            border: #1190ca solid 2px;
+            border-radius: 5px;
+        }
+    }
+    div:hover>div.card-body {
+        bottom: -300px;
+        animation: cardAnim 500ms alternate forwards;
+        overflow: hidden scroll;
+        align-self: center;
+        height: 2ch;
+    }
+}
