@@ -10,6 +10,11 @@
  
 */
 
+header>h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 section {
     width: calc(fit-content + 5px);
     overflow: scroll;
@@ -84,6 +89,9 @@ header {
     padding: 15px;
     grid-column: 1 / 4;
     background: rgb(41, 41, 41);
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 lsb {
@@ -239,6 +247,7 @@ header {
 }
 
 .card-body {
+    font-family: 'Roboto', sans-serif;
     display: grid;
     text-align: center;
     background: lightcoral;
@@ -259,6 +268,7 @@ header {
 }
 
 #linkn {
+    font-family: 'Roboto', sans-serif;
     background-color: rgba(58, 58, 58, 0.753);
     color: #1190ca;
     text-shadow: 1px 1px 2px rgb(29, 29, 29);
