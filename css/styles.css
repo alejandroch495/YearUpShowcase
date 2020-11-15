@@ -10,14 +10,32 @@
  
 */
 
+* {
+    /* text-decoration: none; */
+}
+
+
+/* a {
+    color: lightblue;
+    border: 4px solid lightblue;
+    border-radius: 5px;
+} */
+
+header>h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
 section {
-    width: 59vmax;
+    width: calc(fit-content + 5px);
+    overflow: scroll;
 }
 
 .bottomi {
-    width: 100%;
     background: gray;
-    border-radius: 1rem;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 
@@ -27,8 +45,9 @@ section {
     position: relative;
     bottom: 10%;
     top: 1%;
-    overflow: hidden scroll;
+    overflow: hidden;
     width: 100%;
+    margin: 0 25px 0 0;
 }
 
 
@@ -37,11 +56,14 @@ section {
 .mainc>div {
     background: rgba(64, 115, 224, 0.527);
     width: 50em;
-    border: solid black;
-    text-shadow: 1px 1px 2px rgba(146, 125, 2, 0.521);
-    color: #3060bb;
+    border: solid rgb(53, 53, 53);
+    text-shadow: 1px 1px 1px rgba(43, 43, 43, 0.767);
+    color: #0b1322;
     border-radius: 10px;
     margin-bottom: 2ch;
+    margin-left: 1%;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 1px 3px rgb(17, 17, 17), -4px -0px 3px rgb(17, 17, 17);
 }
 
 
@@ -74,6 +96,15 @@ body {
     height: 100vh;
 }
 
+header {
+    padding: 15px;
+    grid-column: 1 / 4;
+    background: rgb(41, 41, 41);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 lsb {
     padding: 15px;
     grid-column: 1/2;
@@ -84,9 +115,10 @@ maincontent {
     padding: 15px;
     grid-column: 2/3;
     background: rgb(41, 41, 41);
+    justify-content: center;
+    align-content: flex-start;
     display: grid;
     flex-direction: row;
-    justify-content: center;
     width: 100%;
     height: 100%;
     overflow: hidden scroll;
@@ -107,6 +139,7 @@ footer {
 
 /*
  
+
  ███╗   ██╗ █████╗ ██╗   ██╗██╗ ██████╗  █████╗ ████████╗██╗ ██████╗ ███╗   ██╗    ██████╗  █████╗ ██████╗     ███████╗██╗   ██╗██╗     ██╗███████╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
  ████╗  ██║██╔══██╗██║   ██║██║██╔════╝ ██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗██╔══██╗    ██╔════╝╚██╗ ██╔╝██║     ██║╚══███╔╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
  ██╔██╗ ██║███████║██║   ██║██║██║  ███╗███████║   ██║   ██║██║   ██║██╔██╗ ██║    ██████╔╝███████║██████╔╝    ███████╗ ╚████╔╝ ██║     ██║  ███╔╝ ███████║   ██║   ██║██║   ██║██╔██╗ ██║
@@ -170,16 +203,19 @@ li {
     align-content: center;
 }
 
-li a {
+a {
     border-radius: 10px;
     color: white;
     text-align: center;
     padding: 10px 32px 0px 32px;
     text-decoration: none;
     height: 100%;
+    border: 4px solid lightblue;
+    border-radius: 5px;
 }
 
-li a:hover {
+a:hover {
+    transition: 200ms ease;
     background-color: #555;
     color: white;
     border-style: solid;
@@ -199,6 +235,7 @@ header {
 
 /*
  
+
   ██████╗  █████╗  ██████╗  ██████╗     ███████╗ ████████╗ ██╗   ██╗ ██╗      ██╗ ███╗   ██╗  ██████╗ 
  ██╔════╝ ██╔══██╗ ██╔══██╗ ██╔══██╗    ██╔════╝ ╚══██╔══╝ ╚██╗ ██╔╝ ██║      ██║ ████╗  ██║ ██╔════╝ 
  ██║      ███████║ ██████╔╝ ██║  ██║    ███████╗    ██║     ╚████╔╝  ██║      ██║ ██╔██╗ ██║ ██║  ███╗
@@ -224,12 +261,13 @@ header {
 }
 
 .card-body {
+    font-family: 'Roboto', sans-serif;
     display: grid;
     text-align: center;
     background: lightcoral;
     position: relative;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 0 0 0px;
     opacity: 0%;
     align-self: center;
     width: 75%;
@@ -256,6 +294,10 @@ header {
     left: 0px;
     position: relative;
     margin: 5px;
+}
+
+#linkNames {
+    font-family: 'Roboto', sans-serif;
 }
 
 div.card:hover .card-img-top {
@@ -358,7 +400,7 @@ div:hover>div.card-body {
         }
         100% {
             opacity: 100%;
-            bottom: 105%;
+            bottom: 110%;
             font-size: 1em;
             width: 75%;
             border: #1190ca solid 2px;
@@ -377,22 +419,21 @@ div:hover>div.card-body {
 
 @media (min-width: 1600px) {
     .card-body {
-        display: flex;
         background: rgba(27, 27, 27, 0.658);
         position: relative;
+        display: flex;
         flex-direction: column;
-        margin: 0px;
         padding: 50px 1rem 22rem 1rem;
         opacity: 0%;
         border-radius: 5px;
-        margin: 0 5% 0 5%;
+        margin: 0 25% 0 5%;
         align-self: center;
-        justify-content: space-around;
     }
     .cardd {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
         border-radius: 5px;
     }
@@ -400,6 +441,7 @@ div:hover>div.card-body {
         0% {
             opacity: 0%;
             bottom: 0;
+            width: 10px;
         }
         80% {
             opacity: 00%;
@@ -408,19 +450,20 @@ div:hover>div.card-body {
         95% {
             opacity: 30%;
             bottom: 44ch;
+            width: 20px;
         }
         100% {
             opacity: 100%;
-            bottom: 46ch;
+            bottom: 55ch;
             width: 75%;
             left: 6%;
-            border: #1190ca solid 2px;
+            border: #919191 solid 2px;
             border-radius: 5px;
         }
     }
     div:hover>div.card-body {
         bottom: -300px;
-        animation: cardAnim 500ms alternate forwards;
+        animation: cardAnim 1s ease-in forwards;
         overflow: hidden scroll;
         align-self: center;
         height: 2ch;
