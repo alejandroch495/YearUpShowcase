@@ -16,7 +16,7 @@ function card1Detail() {
         "plans for 2 years. Jimuel knows first-hand the adaptability and patience needed to succeed in a new fast paced environment." +
         " He experienced managing an ecommerce business that he created called Meerakol. As well as operated his" +
         " own social media marketing agency called Revenue Multiply.</p>" +
-        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/jimuelfaylona\"> Mark Jimuel R Faylona</a>";
+        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/jimuelfaylona\"> <span id=\"linkNames\">Mark Jimuel R Faylona</span></a>";
 
 }
 
@@ -30,7 +30,7 @@ function card2Detail() {
         " and digital artist, she peruses life with a creative edge and unique perspective. Maria dreams of displaying those skills, and the ones she’s nurturing " +
         "in Year Up to the right company." +
         " </p>" +
-        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/maria-o-sullivan-259bb51b9\"> Maria O'Sullivan</a>";
+        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/maria-o-sullivan-259bb51b9\"> <span id=\"linkNames\">Maria O'Sullivan</span></a>";
 }
 
 function card3Detail() {
@@ -42,7 +42,7 @@ function card3Detail() {
         " willing to learn something new and try to achieve one goal in mind, and that goal being to learn/grow. with this mindset they can never fail as long as they" +
         " learn and grow from it." +
         "</p>" +
-        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/alex-chavez-982799195\"> Alejandro Chavez</a>";
+        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/alex-chavez-982799195\"> <span id=\"linkNames\">Alejandro Chavez</span></a>";
 }
 
 function card4Detail() {
@@ -62,5 +62,5 @@ function card4Detail() {
         "She will never stop working towards making a better future for her children, she will never stop thriving to be self-sufficient, and she will never " +
         "stop trying to achieve to the best. As Jeffrey Gitomer says “Obstacles can’t stop you. Problems can’t stop you. Only you can’t stop you.”" +
         "</p>" +
-        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/anisah-abdullah-845b611b0/\"> Anisah Abdullah</a>";
+        "<a id=\"linkn\" class=\"fab fa-linkedin\" href=\"https:\//www.linkedin.com\/in\/anisah-abdullah-845b611b0/\"> <span id=\"linkNames\">Anisah Abdullah</span></a>";
 }
