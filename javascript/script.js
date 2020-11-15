@@ -6,6 +6,7 @@ var card1 = document.getElementById("card1d");
 var card2 = document.getElementById("card2d");
 var card3 = document.getElementById("card3d");
 var card4 = document.getElementById("card4d");
+var i = 0;
 
 function card1Detail() {
     card1.innerHTML = "<h4>Mark Jimuel R Faylona</h4>" +
